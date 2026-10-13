@@ -69,7 +69,7 @@ jobs:
     - name : Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v7
       with:
-        image: nameisanil/ani_docker:tagname
+        image: nameisanil/ani_docker
         registry: docker.io
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}  
